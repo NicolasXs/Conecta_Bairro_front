@@ -1,4 +1,4 @@
-"use client"; // necessário para usar useState e hooks
+"use client"; 
 
 import { useState } from "react";
 import Link from "next/link";
