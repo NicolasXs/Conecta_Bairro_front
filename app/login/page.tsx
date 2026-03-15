@@ -1,4 +1,4 @@
-"use client"; // necessário para usar useRouter no App Router
+"use client";
 
 import { useRouter } from "next/navigation";
 
