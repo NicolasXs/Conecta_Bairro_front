@@ -12,10 +12,10 @@ interface WorkCard {
 
 export default function Home() {
   const allCards: WorkCard[] = [
-    { id: 1, title: "Recurso 1", description: "Descrição do recurso 1" },
-    { id: 2, title: "Recurso 2", description: "Descrição do recurso 2" },
-    { id: 3, title: "Recurso 3", description: "Descrição do recurso 3" },
-    { id: 4, title: "Recurso Extra", description: "Outro recurso" },
+    { id: 1, title: "Bairros", description: "Escolha os bairros da sua cidade" },
+    { id: 2, title: "Comercios", description: "Veja os comercios próximos" },
+    { id: 3, title: "Serviços", description: "Veja os serviços" },
+    { id: 4, title: "Trabalhadores", description: "Escolha o trabalhador de sua preferência" },
   ];
 
   const [filteredCards, setFilteredCards] = useState<WorkCard[]>(allCards);
