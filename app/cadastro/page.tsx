@@ -18,22 +18,40 @@ export default function Cadastro() {
           />
 
           <input
-            type="email"
-            placeholder="Email"
+            type="text"
+            placeholder="CPF / CNPJ"
             className="mb-4 rounded-md border border-gray-300 bg-white text-black p-3 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
           />
 
           <input
-            type="password"
-            placeholder="Senha"
+            type="tel"
+            placeholder="Telefone"
             className="mb-4 rounded-md border border-gray-300 bg-white text-black p-3 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
           />
 
           <input
             type="text"
             placeholder="Bairro"
-            className="mb-5 rounded-md border border-gray-300 bg-white text-black p-3 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+            className="mb-4 rounded-md border border-gray-300 bg-white text-black p-3 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
           />
+
+          <input
+            type="text"
+            placeholder="Cidade"
+            className="mb-4 rounded-md border border-gray-300 bg-white text-black p-3 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+          />
+
+          <select
+            className="mb-5 rounded-md border border-gray-300 bg-white text-black p-3 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Tipo de usuário
+            </option>
+            <option value="trabalhador">Trabalhador</option>
+            <option value="cliente">Cliente</option>
+            <option value="comercio">Comércio</option>
+          </select>
 
           <button
             type="submit"
