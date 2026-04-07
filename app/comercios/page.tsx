@@ -84,7 +84,6 @@ export default function Page() {
           Localização
         </h1>
 
-        {/* cidades */}
         <div className="mb-6 flex flex-wrap gap-2">
           {cidades.map((c, index) => (
             <button
@@ -101,7 +100,6 @@ export default function Page() {
           ))}
         </div>
 
-        {/* pARTE de buscar os comercios*/}
         {cidade && (
           <SearchBar
             placeholder="Buscar bairro..."
@@ -109,7 +107,6 @@ export default function Page() {
           />
         )}
 
-        {/* o que pesquisou */}
         {cidade && (
           <div className="mt-6">
             {bairrosFiltrados.map((bairro, index) => (
@@ -122,7 +119,6 @@ export default function Page() {
                 {comerciosPorBairro[bairro]?.map((item, i) => (
                   <div key={i}>
 
-                    {/* CARD */}
                     <div
                       onClick={() =>
                         setComercioSelecionado(
@@ -137,7 +133,6 @@ export default function Page() {
                       <p className="text-xs opacity-70">{item.tipo}</p>
                     </div>
 
-                    {/* Detalhe do comercio) */}
                     {comercioSelecionado === item.nome && (
                       <div className="p-3 mb-3 border rounded bg-gray-50">
                         <p className="text-sm">
