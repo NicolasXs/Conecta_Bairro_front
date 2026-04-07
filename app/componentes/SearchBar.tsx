@@ -20,19 +20,38 @@ export default function SearchBar({ placeholder, onSearch }: SearchBarProps) {
 
   return (
     <form onSubmit={handleSubmit} className="flex w-full">
+
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder={placeholder || "Buscar..."}
-        className="w-full rounded-l-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="
+          w-full 
+          rounded-l-lg 
+          border border-gray-300 dark:border-gray-600
+          px-3 py-2 
+          bg-[var(--background)] 
+          text-[var(--foreground)]
+          focus:outline-none 
+          focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600
+        "
       />
+
       <button
         type="submit"
-        className="bg-blue-500 rounded-r-lg px-4 py-2 text-white hover:bg-blue-600 transition"
+        className="
+          rounded-r-lg 
+          px-4 py-2 
+          bg-gray-200 dark:bg-gray-700 
+          text-[var(--foreground)] 
+          hover:bg-gray-300 dark:hover:bg-gray-600 
+          transition
+        "
       >
         🔍
       </button>
+
     </form>
   );
 }
