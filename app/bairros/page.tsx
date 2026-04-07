@@ -99,7 +99,7 @@ export default function Page() {
           }}
         >
 
-          {/* CIDADES */}
+          {/* pate de cidades */}
           <div className="mb-5">
             <p className="text-sm font-medium opacity-70 mb-2">
               Cidade
@@ -127,7 +127,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* BUSCA */}
+          {/* parte de buscas */}
           {cidade && (
             <div className="mb-5">
               <p className="text-sm font-medium opacity-70 mb-2">
@@ -141,7 +141,7 @@ export default function Page() {
             </div>
           )}
 
-          {/* LISTA DE BAIRROS */}
+          {/* parte dos bairros */}
           {cidade && (
             <div
               className="rounded-lg overflow-hidden border"
@@ -173,7 +173,7 @@ export default function Page() {
           )}
         </div>
 
-        {/* RESULTADO */}
+        {/* resultados da pesquisa  */}
         {bairroSelecionado && (
           <div
             className="mt-4 p-4 rounded-lg border text-sm"
