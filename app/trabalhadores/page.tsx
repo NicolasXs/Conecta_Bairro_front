@@ -17,7 +17,7 @@ export default function Page() {
   const trabalhadores: Trabalhador[] = [
     { id: 1, nome: "João da Silva", profissao: "Pedreiro", imagem: "/imgs/user1.jpg" },
     { id: 2, nome: "Maria Souza dos Santos", profissao: "Diarista", imagem: "/imgs/user2.jpg" },
-    { id: 3, nome: "RobertoCarlos Pereira", profissao: "Eletricista", imagem: "/imgs/user3.jpg" },
+    { id: 3, nome: "Roberto Carlos Pereira", profissao: "Eletricista", imagem: "/imgs/user3.jpg" },
     { id: 4, nome: "Ana Castela", profissao: "Carpinteira", imagem: "/imgs/user4.jpg" },
     { id: 5, nome: "Zoro dos Santos", profissao: "Encanador", imagem: "/imgs/user5.jpg" }
   ];
@@ -46,7 +46,10 @@ export default function Page() {
         <div className="mt-6 space-y-3">
 
           {filtrados.map((t) => (
-            <Link key={t.id} href={`/trabalhadores/${t.id}`}>
+            <Link
+              key={t.id}
+              href={t.id === 1 ? "/user1" : "#"}
+            >
               <div className="flex items-center gap-3 p-3 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition">
 
                 <img
